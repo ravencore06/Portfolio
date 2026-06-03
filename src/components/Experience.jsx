@@ -8,6 +8,18 @@ function Experience() {
 
   const experiences = [
     {
+      title: 'Machine Learning Intern',
+      company: 'Aegion Dynamic Solutions',
+      period: 'May 2026 – Present',
+      location: 'Visakhapatnam, India',
+      type: 'Internship',
+      description: [
+        "Contributing to machine learning research and development (R&D) projects in a deep-tech environment.",
+        "Assisting in building data pipelines, processing datasets, and training ML models.",
+        "Collaborating with research teams to design, implement, and test algorithmic systems."
+      ],
+    },
+    {
       title: 'Campus Catalyst',
       company: 'Swiggy',
       period: 'Apr 2026 – Present',
