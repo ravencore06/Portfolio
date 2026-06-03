@@ -20,18 +20,6 @@ function Experience() {
       ],
     },
     {
-      title: 'Campus Catalyst',
-      company: 'Swiggy',
-      period: 'Apr 2026 – Present',
-      location: 'Remote',
-      type: 'Internship',
-      description: [
-        "Selected for Swiggy's Campus Catalyst program, engaging with the company's hyperlocal delivery ecosystem and data-driven operations as a student representative.",
-        "Contributing insights on consumer behaviour, campus food-tech trends, and digital engagement strategies.",
-        "Developing understanding of demand forecasting, inventory planning, and operational analytics within a fast-paced, data-intensive consumer platform."
-      ],
-    },
-    {
       title: 'AI-ML Virtual Intern',
       company: 'Google for Developers - EduSkills',
       period: 'Jan 2026 – Mar 2026',
