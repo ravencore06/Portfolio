@@ -18,7 +18,7 @@ function Hero() {
     }
     
     window.open(
-      "https://drive.google.com/file/d/1QHveDAe-U9WHWbHkZL_cjntUoS2RB6Mg/view?usp=sharing",
+      "https://drive.google.com/file/d/12lnajuXKhEdgUKlpF-pPbdsX_J5XFyqH/view?usp=sharing",
       "_blank",
       "noopener,noreferrer"
     );
