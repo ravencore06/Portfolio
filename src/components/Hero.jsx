@@ -130,11 +130,11 @@ function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className={`text-xl md:text-2xl lg:text-3xl mb-10 font-light leading-relaxed ${
-            theme === "dark" ? "text-[#aed9e0]/90" : "text-[#5e6472]/80"
+          className={`text-lg md:text-xl lg:text-2xl mb-10 font-medium leading-relaxed tracking-wide ${
+            theme === "dark" ? "text-[#b8f2e6]/90" : "text-[#5e6472]/90"
           }`}
         >
-          Software Engineering Intern & Open-Source Contributor
+          AI/ML Builder • Agentic Systems • Full-Stack • B.Tech CSE — MVGR College of Engineering
         </motion.p>
 
         {/* Decorative line */}

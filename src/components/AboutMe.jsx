@@ -174,11 +174,11 @@ function AboutMe() {
                             }`}
                         >
                             <p className="text-xl md:text-2xl font-light">
-                                Second-year B.Tech IT student at MVGR College of Engineering with strong foundations in machine learning, and systems programming.
+                                Second-year B.Tech CSE builder with a track record of shipping production-grade AI products end-to-end — from agentic pipelines and healthcare ML platforms to AI-powered social media tools.
                             </p>
                             
                             <p className="text-base md:text-lg opacity-90">
-                                Proficient in Python and C with growing expertise in data pipelines, AI-driven decision making, and agentic AI systems. Passionate about using technology to solve real-world, consumer-facing problems — with hands-on experience building AI platforms, computer vision systems, enterprise IT platforms, and LLM-powered agents.
+                                Proficient in Python, ML/DL, RAG systems, and full-stack deployment. Contributed to open source (GSSoC, SWOC); completed internships with Google EduSkills (AI/ML) and ServiceNow University; currently an ML intern at Aegion Dynamic Solutions with an incoming role at FlyRank AI. Builds fast, documents well, and operates with founder-level ownership.
                             </p>
 
                             

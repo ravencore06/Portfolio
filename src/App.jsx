@@ -7,6 +7,7 @@ import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Skills from './components/Skills.jsx';
+import EducationAchievements from './components/EducationAchievements.jsx';
 import Contact from './components/Contact.jsx';
 import AnalyticsTracker from './components/AnalyticsTracker.jsx';
 import { Analytics } from '@vercel/analytics/react';
@@ -174,6 +175,7 @@ function App() {
         <Projects />
         <AboutMe />
         <Skills />
+        <EducationAchievements />
         <Contact />
       </ThemeContext.Provider>
     </div>

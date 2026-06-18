@@ -11,11 +11,10 @@ function Skills() {
         title: 'Languages',
         icon: Cpu,
         skills: [
-            'C',
             'Python',
             'C++',
-            'TypeScript',
-            'JavaScript'
+            'C',
+            'TypeScript / JavaScript (basic)'
         ]
     },
     {
@@ -24,8 +23,8 @@ function Skills() {
         skills: [
             'Machine Learning',
             'Computer Vision',
-            'Robotics',
             'Agentic AI',
+            'Robotics',
             'DSA'
         ]
     },
@@ -37,7 +36,8 @@ function Skills() {
             'Keras',
             'scikit-learn',
             'OpenCV',
-            'ROS2',
+            'React',
+            'Node.js',
             'Pandas',
             'NumPy'
         ]
@@ -51,23 +51,25 @@ function Skills() {
             'Linux',
             'VS Code',
             'Vercel',
-            'ServiceNow',
             'Ollama',
-            'OpenRouter'
+            'OpenRouter',
+            'ServiceNow',
+            'PostgreSQL'
         ]
     },
     {
         title: 'Core Concepts',
         icon: Database,
         skills: [
-            'DSA',
-            'OOP',
-            'REST APIs',
-            'SLAM',
             'RAG',
             'Prompt Engineering',
+            'Code Review',
+            'Debugging',
+            'OOP',
             'Model Evaluation',
-            'Data Pipelines'
+            'Data Pipelines',
+            'REST APIs',
+            'GraphQL'
         ]
     }
 ];

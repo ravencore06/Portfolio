@@ -1,108 +1,74 @@
 export const projectsData = [
     {
-        id: 'support-triage-agent',
-        title: 'Support Triage Agent',
-        shortDescription: 'A tri-mode AI Support Agent that uses RAG to solve customer support tickets.',
-        fullDescription: 'A tri-mode AI Support Agent that uses RAG to solve customer support tickets. It automatically chooses between Claude, Gemini, or local Ollama to ensure it never goes offline, while using intelligent escalation rules to catch sensitive security and fraud cases.',
-        tags: ['RAG', 'Agentic AI', 'Claude', 'Gemini', 'Ollama', 'Python'],
+        id: 'growthos',
+        title: 'GrowthOS',
+        shortDescription: 'Building a unified AI-powered dashboard for creators and businesses to generate content, optimise captions, detect trends, schedule posts, and track analytics across Instagram, LinkedIn, and YouTube.',
+        fullDescription: 'GrowthOS is an AI-powered social media management and creator tool in active development. It provides creators and businesses with a unified dashboard to generate content, optimize captions using context-aware AI models, detect trends, schedule posts, and track analytics across Instagram, LinkedIn, and YouTube. Built with a modular analytics layer, it leverages OpenAI\'s API and handles cross-platform post management using platform-specific API connectors, deployed end-to-end on Vercel.',
+        tags: ['Python', 'React', 'Node.js', 'OpenAI API', 'REST APIs', 'PostgreSQL', 'Vercel'],
         features: [
-            'Tri-mode fallback architecture (Claude -> Gemini -> Ollama)',
-            'Retrieval-Augmented Generation (RAG) for accurate responses',
-            'Intelligent escalation rules for security and fraud cases',
-            '100% uptime design using local LLM fallbacks'
+            'Unified AI-powered dashboard for creator workflows',
+            'Context-aware caption generation and trend analysis using OpenAI API',
+            'Scheduling engine with platform-specific API connectors for cross-platform posting',
+            'Modular analytics layer to surface actionable engagement insights'
         ],
         challenges: [
-            'Ensuring high availability of AI services during API outages',
-            'Accurately identifying and escalating sensitive tickets',
-            'Seamlessly switching between different LLM providers'
+            'Interfacing with diverse, rate-limited, and complex APIs for Instagram, LinkedIn, and YouTube',
+            'Aggregating engagement analytics dynamically into a modular database layer'
         ],
         solutions: [
-            'Implemented a robust fallback mechanism to switch providers dynamically',
-            'Developed keyword and sentiment-based escalation heuristics',
-            'Created a unified abstraction layer for multiple LLM APIs'
+            'Created a modular middleware wrapper handling token refreshes, rate limits, and request pooling',
+            'Designed an optimized PostgreSQL schema with timeseries support for performant analytics querying'
+        ],
+        github: 'https://github.com/ravencore06',
+        live: '#',
+        featured: true
+    },
+    {
+        id: 'support-triage-agent',
+        title: 'Support Triage Agent',
+        shortDescription: 'Production-grade AI agent triaging customer support tickets via a 9-layer RAG pipeline - 100% processing success across 29 tickets, 85-90% estimated accuracy.',
+        fullDescription: 'A production-grade AI support triage agent that handles customer support tickets via a 9-layer Retrieval-Augmented Generation (RAG) pipeline. Features a tri-mode LLM fallback system (OpenRouter -> Gemini 2.0 Flash -> local Ollama) using exponential backoff, checkpoint/resume, and intelligent escalation. Completely standalone with zero vector DB dependency, achieving 100% processing success on test datasets with 85-90% accuracy.',
+        tags: ['Python', 'RAG', 'Gemini 2.0 Flash', 'Claude', 'Ollama', 'OpenRouter'],
+        features: [
+            '9-layer RAG pipeline for customer ticket processing and routing',
+            'Tri-mode LLM fallback (OpenRouter -> Gemini 2.0 Flash -> local Ollama) for 100% uptime',
+            'Exponential backoff, checkpoint/resume, and intelligent escalation flow',
+            'Independent, zero vector DB dependency design for lighter deployment'
+        ],
+        challenges: [
+            'Ensuring processing consistency and resuming state during mid-execution network or API drops',
+            'Maintaining high triage accuracy without the overhead of a dedicated vector database'
+        ],
+        solutions: [
+            'Built a local state-file checkpoints manager to enable execution resume and exponential backoffs',
+            'Designed a lightweight semantic lookup engine using on-device JSON index mappings and standard embedding similarity calculations'
         ],
         github: 'https://github.com/ravencore06/support-triage-agent',
         live: '#',
         featured: true
     },
     {
-        id: 'swasthyakosh',
-        title: 'SwasthyaKosh',
-        shortDescription: 'AI-Powered Medical Prescription Management Platform',
-        fullDescription: 'A secure digital platform for storing and managing medical prescriptions with encrypted data storage. It integrates AI/ML to automatically extract key medication details, detect drug interactions, and generate personalized health insights.',
-        tags: ['AI/ML', 'Healthcare', 'Security', 'Web Platform'],
-        features: [
-            'Secure digital platform with encrypted data storage',
-            'AI/ML integration for medication detail extraction',
-            'Automated drug interaction detection and personalized health insights',
-            'Controlled sharing mechanism for secure patient-provider communication',
-            'Reduced paperwork burden and improved medication safety'
-        ],
-        challenges: [
-            'Ensuring HIPAA-compliant data security and encryption',
-            'Accurately extracting text from various prescription formats using OCR and AI',
-            'Building a robust system for detecting complex drug interactions'
-        ],
-        solutions: [
-            'Implemented state-of-the-art encryption for data at rest and in transit',
-            'Utilized advanced machine learning models for accurate prescription parsing',
-            'Integrated comprehensive medical databases to ensure accurate drug interaction detection'
-        ],
-        github: 'https://github.com/ravencore06',
-        live: '#',
-        featured: true
-    },
-    {
         id: 'visual-slam',
-        title: 'Visual SLAM',
-        shortDescription: 'Offline Indoor Navigation System for Visually Impaired Users',
-        fullDescription: 'A privacy-preserving Progressive Web App for on-device indoor navigation without cloud dependency. It implements computer vision algorithms to detect and track key indoor landmarks in real-time, providing accessible navigation guidance.',
-        tags: ['PWA', 'Computer Vision', 'Sensor Fusion', 'Accessibility'],
+        title: 'Visual SLAM — GPS-Free Indoor Navigation',
+        shortDescription: 'Offline indoor navigation using on-device computer vision and mobile sensors for landmark detection without GPS; SLAM algorithms with ROS2 for real-time localisation.',
+        fullDescription: 'An offline indoor navigation system designed for GPS-deprived environments. It runs computer vision landmark detection and mobile sensor fusion (accelerometer, gyroscope) completely on-device. Leveraging SLAM algorithms with ROS2 (in progress) for real-time localization, it delivers privacy-preserving audio and haptic guidance via a Progressive Web App (PWA).',
+        tags: ['Python', 'ROS2', 'OpenCV', 'PWA', 'Robotics', 'Computer Vision'],
         features: [
-            'Privacy-preserving Progressive Web App (PWA)',
-            'On-device indoor navigation without cloud dependency',
-            'Real-time computer vision landmark detection and tracking',
-            'Integration with mobile sensor data (accelerometer, gyroscope)',
-            'Audio and haptic feedback system for accessible guidance'
+            'Offline on-device landmark detection using computer vision without cloud dependency',
+            'Real-time localization using SLAM algorithms integrated with ROS2',
+            'Sensor fusion combining camera streams with mobile accelerometer and gyroscope data',
+            'Privacy-preserving Progressive Web App (PWA) with audio and haptic guidance'
         ],
         challenges: [
-            'Running complex computer vision models efficiently on mobile devices',
-            'Achieving accurate positioning without GPS signals indoors',
-            'Designing an intuitive and accessible UI/UX for visually impaired users'
+            'Porting resource-intensive SLAM and computer vision models to execute smoothly on edge/mobile devices',
+            'Integrating ROS2 nodes with web applications for real-time sensor sharing'
         ],
         solutions: [
-            'Optimized computer vision algorithms for edge computing',
-            'Developed a robust sensor fusion engine combining camera and motion data',
-            'Implemented a multi-modal feedback system relying on audio cues and haptics'
+            'Implemented WebAssembly (Wasm) compile-steps for core OpenCV functions to maximize mobile browser performance',
+            'Configured a lightweight WebSocket-based bridge between local ROS2 nodes and the PWA frontend'
         ],
         github: 'https://github.com/ravencore06',
         live: '#',
         featured: true
-    },
-    {
-        id: 'breast-cancer-prediction',
-        title: 'Breast Cancer Prediction Model',
-        shortDescription: 'Machine learning classification model for disease prediction and risk assessment',
-        fullDescription: 'A classification model built using machine learning techniques to predict breast cancer and assess patient risk based on medical data. Evaluated using standard performance metrics.',
-        tags: ['Machine Learning', 'Python', 'Data Science', 'Healthcare'],
-        features: [
-            'Disease prediction and risk assessment using ML techniques',
-            'Comprehensive exploratory data analysis and feature engineering',
-            'Rigorous model evaluation using precision, recall, F1-score, and AUC',
-            'Focus on interpretability and clinical relevance'
-        ],
-        challenges: [
-            'Handling class imbalance in medical datasets',
-            'Selecting the most relevant features to prevent overfitting',
-            'Ensuring high recall to minimize false negatives in medical diagnosis'
-        ],
-        solutions: [
-            'Applied techniques like SMOTE for balancing the dataset',
-            'Used feature importance analysis and cross-validation for robust feature selection',
-            'Tuned hyper-parameters to optimize specifically for recall and F1-score'
-        ],
-        github: 'https://github.com/ravencore06',
-        live: '#',
-        featured: false
     }
 ];

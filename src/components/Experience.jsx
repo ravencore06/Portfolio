@@ -8,50 +8,46 @@ function Experience() {
 
   const experiences = [
     {
-      title: 'Machine Learning Intern',
+      title: 'ML Intern',
       company: 'Aegion Dynamic Solutions',
       period: 'May 2026 – Present',
-      location: 'Visakhapatnam, India',
-      type: 'Internship',
-      description: [
-        "Contributing to machine learning research and development (R&D) projects in a deep-tech environment.",
-        "Assisting in building data pipelines, processing datasets, and training ML models.",
-        "Collaborating with research teams to design, implement, and test algorithmic systems."
-      ],
-    },
-    {
-      title: 'AI-ML Virtual Intern',
-      company: 'Google for Developers - EduSkills',
-      period: 'Jan 2026 – Mar 2026',
       location: 'Remote',
       type: 'Internship',
       description: [
-        "Completed a structured 3-month AI/ML program covering ML workflows, model training, data preprocessing, and evaluation.",
-        "Built and iterated on Python-based ML projects using TensorFlow and Keras; applied rigorous model lifecycle management including feature engineering and k-fold cross-validation.",
-        "Developed proficiency in end-to-end data pipelines and performance reporting."
+        "Developing and evaluating ML models in Python — dimensionality reduction and custom neural network architectures; debugging performance bottlenecks and documenting findings systematically.",
+        "End-to-end data science workflows: preprocessing, feature engineering, model evaluation with emphasis on clean, reproducible code on real-world datasets."
       ],
     },
     {
-      title: 'Virtual Intern - ServiceNow Platform',
-      company: 'ServiceNow University | AICTE-SmartBridge',
-      period: 'Feb 2026 – Apr 2026',
+      title: 'Research Member',
+      company: 'National Student Research Institution (NSRI)',
+      period: 'June 2026 – Present',
       location: 'Remote',
-      type: 'Internship',
+      type: 'Research',
       description: [
-        "Completed a structured virtual internship covering enterprise IT platform fundamentals: ServiceNow Administration, Flows, Automated Test Framework (ATF), and Reporting.",
-        "Studied Agentic AI concepts and their application within the ServiceNow platform, gaining insight into AI-driven enterprise workflow automation.",
-        "Prepared for the Certified System Administrator (CSA) exam; cert ID: SNU2014123."
+        "Auditing algorithmic bias and fairness gaps in multi-modal clinical machine learning models using the MIMIC-IV and eICU databases.",
+        "Contributing to a peer-reviewed meta-analysis aimed at promoting algorithmic equity in health informatics."
+      ],
+    },
+    {
+      title: 'Virtual Internships',
+      company: 'Google EduSkills & ServiceNow',
+      period: 'Jan 2026 – Apr 2026',
+      location: 'Remote',
+      type: 'Virtual Internship',
+      description: [
+        "Google for Developers - EduSkills (AI/ML): Built Python projects with TensorFlow/Keras; applied feature engineering and k-fold cross-validation to evaluate model performance.",
+        "ServiceNow Platform & Admin: Covered enterprise IT fundamentals including Flows, ATF, and Reporting; evaluated AI-driven workflow logic against platform standards."
       ],
     },
     {
       title: 'Open Source Contributor',
-      company: 'GirlScript Summer of Code & Social Winter of Code',
+      company: 'GSSoC & SWOC',
       period: 'Jul 2025 – Feb 2026',
       location: 'Remote',
       type: 'Open Source',
       description: [
-        "Contributed to real-world projects over multiple months, reinforcing collaborative engineering, asynchronous teamwork, and iterative development skills.",
-        "Resolved issues and submitted reviewed pull requests; practiced collaborative code review, documentation, and version control using Git/GitHub."
+        "GirlScript Summer of Code (GSSoC) & Social Winter of Code (SWOC): Resolved issues across real-world repos via Git branching and PR workflows."
       ],
     }
   ];
