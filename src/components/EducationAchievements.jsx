@@ -15,6 +15,11 @@ function EducationAchievements() {
 
   const certifications = [
     {
+      title: 'McKinsey Forward Program',
+      issuer: 'McKinsey & Company',
+      date: 'Completed'
+    },
+    {
       title: 'AWS AI Practitioner Challenge',
       issuer: 'Udacity',
       date: 'May 2026'
@@ -42,7 +47,7 @@ function EducationAchievements() {
     },
     {
       title: 'Quantum Fundamentals',
-      issuer: 'IBM',
+      issuer: 'Qubitech',
       date: 'Completed'
     },
     {
