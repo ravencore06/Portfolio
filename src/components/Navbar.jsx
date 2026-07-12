@@ -9,7 +9,7 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const navItems = ['Home', 'Experience', 'Projects', 'About', 'Skills', 'Education', 'Contact'];
+  const navItems = ['Home', 'Experience', 'Projects', 'About', 'Skills', 'Achievements', 'Contact'];
 
   useEffect(() => {
     const handleScroll = () => {

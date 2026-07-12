@@ -18,7 +18,7 @@ function Hero() {
     }
     
     window.open(
-      "https://drive.google.com/file/d/1FJFvgC6Kj_CE9Z312t90fTvb9G24FbtF/view?usp=sharing",
+      "https://drive.google.com/file/d/1TsTgTNW8bK-aNHpDDFl8gDPQ6X73L0cd/view?usp=sharing",
       "_blank",
       "noopener,noreferrer"
     );
@@ -134,7 +134,7 @@ function Hero() {
             theme === "dark" ? "text-[#b8f2e6]/90" : "text-[#5e6472]/90"
           }`}
         >
-          AI/ML Builder • Agentic Systems • Full-Stack • B.Tech CSE — MVGR College of Engineering
+          I don’t wait for the future to arrive. I learn how it works, then build my place in it.
         </motion.p>
 
         {/* Decorative line */}

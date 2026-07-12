@@ -5,32 +5,12 @@ import { GraduationCap, Award, Trophy, Info, BookOpen, Languages, Sparkles } fro
 
 function EducationAchievements() {
   const { theme } = useContext(ThemeContext);
-  const [activeTab, setActiveTab] = useState('education');
+  const [activeTab, setActiveTab] = useState('certifications');
 
   const tabs = [
-    { id: 'education', label: 'Education', icon: GraduationCap },
     { id: 'certifications', label: 'Certifications', icon: Award },
     { id: 'hackathons', label: 'Hackathons', icon: Trophy },
     { id: 'additional', label: 'Additional Info', icon: Info }
-  ];
-
-  const education = [
-    {
-      degree: 'B.Tech — Computer Science & Engineering',
-      institution: 'MVGR College of Engineering (Autonomous)',
-      location: 'Vizianagaram, AP',
-      period: '2024 – 2028 (Expected)',
-      grade: 'CGPA: 9.05 / 10',
-      coursework: ['Data Structures', 'OOP', 'Computer Networks', 'Operating Systems', 'Machine Learning'],
-      activities: 'Active in IIC (Institution\'s Innovation Council) — working on innovation initiatives and campus hackathons.'
-    },
-    {
-      degree: 'Intermediate — MPC',
-      institution: 'Sri Chaitanya College of Education',
-      location: 'Andhra Pradesh',
-      period: 'May 2022 – May 2024',
-      grade: 'MPC Stream'
-    }
   ];
 
   const certifications = [
@@ -116,7 +96,7 @@ function EducationAchievements() {
 
   return (
     <section
-      id="education"
+      id="achievements"
       className="py-24 px-6 relative overflow-hidden bg-transparent"
     >
       {/* Background decoration */}
@@ -151,7 +131,7 @@ function EducationAchievements() {
               theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
             }`}
           >
-            Education & Achievements
+            Certifications & Achievements
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -199,87 +179,6 @@ function EducationAchievements() {
             : 'bg-white/50 border-[#aed9e0]/30'
         } shadow-[0_4px_25px_rgba(0,0,0,0.02)]`}>
           <AnimatePresence mode="wait">
-            {activeTab === 'education' && (
-              <motion.div
-                key="education"
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-                className="space-y-8"
-              >
-                <div className="relative border-l-2 pl-6 md:pl-8 space-y-12 border-current border-opacity-10">
-                  {education.map((edu, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      className="relative"
-                    >
-                      {/* Indicator Dot */}
-                      <span className={`absolute -left-[33px] md:-left-[41px] top-1.5 w-4.5 h-4.5 rounded-full border-4 ${
-                        theme === 'dark' ? 'bg-[#b8f2e6] border-[#1c1c1c]' : 'bg-[#aed9e0] border-white'
-                      }`} />
-
-                      <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 mb-3">
-                        <div>
-                          <h3 className={`text-xl md:text-2xl font-bold ${
-                            theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
-                          }`}>
-                            {edu.degree}
-                          </h3>
-                          <p className={`text-lg font-medium opacity-85 ${
-                            theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                          }`}>
-                            {edu.institution}
-                          </p>
-                        </div>
-                        <div className="flex flex-row md:flex-col items-center md:items-end gap-2 shrink-0 text-sm opacity-80">
-                          <span className="font-semibold">{edu.period}</span>
-                          <span className="hidden md:inline">•</span>
-                          <span className={`px-2.5 py-0.5 rounded-full font-bold text-xs ${
-                            theme === 'dark' ? 'bg-[#b8f2e6]/25 text-[#b8f2e6]' : 'bg-[#aed9e0]/40 text-[#5e6472]'
-                          }`}>
-                            {edu.grade}
-                          </span>
-                        </div>
-                      </div>
-
-                      {edu.coursework && (
-                        <div className="mb-4">
-                          <p className="text-sm font-semibold mb-2 flex items-center gap-1.5 opacity-80">
-                            <BookOpen size={14} /> Coursework:
-                          </p>
-                          <div className="flex flex-wrap gap-1.5">
-                            {edu.coursework.map((course, idx) => (
-                              <span
-                                key={idx}
-                                className={`text-xs px-2.5 py-1 rounded-lg border ${
-                                  theme === 'dark'
-                                    ? 'bg-[#b8f2e6]/5 border-[#b8f2e6]/15 text-[#b8f2e6]/90'
-                                    : 'bg-[#aed9e0]/10 border-[#aed9e0]/30 text-[#5e6472]/90'
-                                }`}
-                              >
-                                {course}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {edu.activities && (
-                        <p className={`text-sm leading-relaxed opacity-85 ${
-                          theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
-                        }`}>
-                          <span className="font-semibold">Activities & Leadership:</span> {edu.activities}
-                        </p>
-                      )}
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            )}
 
             {activeTab === 'certifications' && (
               <motion.div
