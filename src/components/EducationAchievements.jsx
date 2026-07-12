@@ -15,8 +15,8 @@ function EducationAchievements() {
 
   const certifications = [
     {
-      title: 'McKinsey Forward Program',
-      issuer: 'McKinsey & Company',
+      title: 'McKinsey.org Forward Program',
+      issuer: 'McKinsey.org',
       date: 'Completed'
     },
     {
