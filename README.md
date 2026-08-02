@@ -8,7 +8,7 @@ It’s packed with smooth animations, dynamic visuals, and a dash of personality
 ## >> Features
 
 -  **Responsive Design**: works flawlessly across devices (mobile, tablet, desktop).  
--  **Interactive Particle Background**: powered by `ts-particles`, follows your cursor and adds that ✨ vibe.  
+-  **Interactive Particle Background**: powered by `ts-particles`, follows your cursor and adds that vibe.  
 -  **Theme Toggler**: switch between light and dark modes effortlessly.  
 -  **Smooth Animations**: crafted using `GSAP` and `Framer Motion` for fluid transitions.  
 -  **Skeleton Loader Animation**: sleek loading screen before content renders.  
@@ -56,5 +56,5 @@ npm run build
 - The skeleton loader might slightly increase LCP, but it keeps the loading experience smooth and elegant.
 ---
 
-⭐ **Don’t forget to star this repo if you like the vibe!**
+**Don’t forget to star this repo if you like the vibe!**
   
