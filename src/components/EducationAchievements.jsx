@@ -5,12 +5,25 @@ import { GraduationCap, Award, Trophy, Info, BookOpen, Languages, Sparkles } fro
 
 function EducationAchievements() {
   const { theme } = useContext(ThemeContext);
-  const [activeTab, setActiveTab] = useState('certifications');
+  const [activeTab, setActiveTab] = useState('education');
 
   const tabs = [
+    { id: 'education', label: 'Education', icon: GraduationCap },
     { id: 'certifications', label: 'Certifications', icon: Award },
     { id: 'hackathons', label: 'Hackathons', icon: Trophy },
     { id: 'additional', label: 'Additional Info', icon: Info }
+  ];
+
+  const education = [
+    {
+      degree: 'B.Tech – Computer Science & Engineering',
+      institution: 'MVGR College of Engineering (Autonomous), AP',
+      period: '2024 – 2028 (Expected)',
+      details: [
+        'CGPA: 9.05 / 10',
+        'Coursework: Data Structures, OOP, Computer Networks, Operating Systems, Machine Learning'
+      ]
+    }
   ];
 
   const certifications = [
@@ -23,12 +36,6 @@ function EducationAchievements() {
       title: 'AWS AI Practitioner Challenge',
       issuer: 'Udacity',
       date: 'May 2026'
-    },
-    {
-      title: 'ServiceNow Virtual Internship',
-      issuer: 'ServiceNow University & AICTE-SmartBridge',
-      date: 'Apr 2026',
-      certId: 'Cert ID: SNU014123'
     },
     {
       title: 'Breast Cancer Prediction using ML',
@@ -47,7 +54,7 @@ function EducationAchievements() {
     },
     {
       title: 'Quantum Fundamentals',
-      issuer: 'Qubitech',
+      issuer: 'IBM',
       date: 'Completed'
     },
     {
@@ -59,14 +66,14 @@ function EducationAchievements() {
 
   const hackathons = [
     {
-      title: 'ShareFest 8-Hour Hackathon',
+      title: 'ShoreFest 8-Hour Hackathon',
       role: 'Participant / Builder',
       description: 'Rapid prototyping under strict time constraints to deliver an AI agent solution.'
     },
     {
       title: 'Smart India Hackathon (SIH)',
       role: 'Participant / Builder',
-      description: 'Worked on a national-level government problem statement challenge.'
+      description: 'Worked on a national-level government problem-statement challenge.'
     },
     {
       title: 'GenZPulse | TechSprint',
@@ -136,7 +143,7 @@ function EducationAchievements() {
               theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
             }`}
           >
-            Certifications & Achievements
+            Education & Achievements
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -184,6 +191,63 @@ function EducationAchievements() {
             : 'bg-white/50 border-[#aed9e0]/30'
         } shadow-[0_4px_25px_rgba(0,0,0,0.02)]`}>
           <AnimatePresence mode="wait">
+
+            {activeTab === 'education' && (
+              <motion.div
+                key="education"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                className="space-y-6"
+              >
+                {education.map((edu, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.08 }}
+                    className={`p-6 rounded-2xl border flex flex-col md:flex-row md:items-start justify-between gap-4 ${
+                      theme === 'dark'
+                        ? 'bg-[#b8f2e6]/5 border-[#b8f2e6]/10'
+                        : 'bg-[#aed9e0]/10 border-[#aed9e0]/20'
+                    }`}
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className={`p-2.5 rounded-xl ${
+                        theme === 'dark' ? 'bg-[#b8f2e6]/15 text-[#b8f2e6]' : 'bg-[#aed9e0]/35 text-[#5e6472]'
+                      }`}>
+                        <GraduationCap size={20} />
+                      </div>
+                      <div>
+                        <h3 className={`text-lg font-bold ${
+                          theme === 'dark' ? 'text-[#b8f2e6]' : 'text-[#5e6472]'
+                        }`}>
+                          {edu.degree}
+                        </h3>
+                        <p className={`text-sm font-semibold opacity-90 mt-0.5 ${
+                          theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'
+                        }`}>
+                          {edu.institution}
+                        </p>
+                        <ul className="list-disc list-inside space-y-1.5 text-sm mt-4 opacity-80">
+                          {edu.details.map((detail, idx) => (
+                            <li key={idx} className={theme === 'dark' ? 'text-[#aed9e0]' : 'text-[#5e6472]'}>{detail}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    <span className={`self-start md:self-auto px-3 py-1 rounded-full text-xs font-bold shrink-0 ${
+                      theme === 'dark'
+                        ? 'bg-[#5e6472]/30 text-[#d7f5ef]'
+                        : 'bg-[#5e6472]/10 text-[#5e6472]'
+                    }`}>
+                      {edu.period}
+                    </span>
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
 
             {activeTab === 'certifications' && (
               <motion.div

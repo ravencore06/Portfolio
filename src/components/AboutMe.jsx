@@ -174,11 +174,11 @@ function AboutMe() {
                             }`}
                         >
                             <p className="text-xl md:text-2xl font-light">
-                                Second-year builder with a track record of shipping production-grade AI products end-to-end — from agentic pipelines and healthcare ML platforms to AI-powered social media tools.
+                                3rd-year B.Tech, IT student with a track record of shipping production-grade AI products end-to-end — from agentic pipelines and healthcare ML platforms to AI-powered social media tools.
                             </p>
                             
                             <p className="text-base md:text-lg opacity-90">
-                                Proficient in Python, ML/DL, RAG systems, and deployment. Contributed to open source (GSSoC, SWOC); completed internships with Google EduSkills (AI/ML) and ServiceNow University; currently an ML intern at Aegion Dynamic Solutions with an incoming role at FlyRank AI. Builds fast, documents well, and operates with founder-level ownership.
+                                Proficient in Python, ML/DL, RAG systems, and full-stack deployment. Contributed to open-source projects (GSSoC, SWOC); completed internships with Google EduSkills (AI/ML) and ServiceNow University; currently an ML Intern at Aegion Dynamic Solutions, with an upcoming role at FlyRank AI. Builds fast, documents well, and operates with founder-level ownership.
                             </p>
 
                             

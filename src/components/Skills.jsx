@@ -24,7 +24,6 @@ function Skills() {
             'Machine Learning',
             'Computer Vision',
             'Agentic AI',
-            'Robotics',
             'DSA'
         ]
     },
@@ -33,7 +32,6 @@ function Skills() {
         icon: Server,
         skills: [
             'TensorFlow',
-            'Keras',
             'scikit-learn',
             'OpenCV',
             'React',
@@ -54,7 +52,8 @@ function Skills() {
             'Ollama',
             'OpenRouter',
             'ServiceNow',
-            'PostgreSQL'
+            'PostgreSQL',
+            'Docker'
         ]
     },
     {

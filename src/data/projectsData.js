@@ -1,29 +1,5 @@
 export const projectsData = [
     {
-        id: 'growthos',
-        title: 'GrowthOS',
-        shortDescription: 'Building a unified AI-powered dashboard for creators and businesses to generate content, optimise captions, detect trends, schedule posts, and track analytics across Instagram, LinkedIn, and YouTube.',
-        fullDescription: 'GrowthOS is an AI-powered social media management and creator tool in active development. It provides creators and businesses with a unified dashboard to generate content, optimize captions using context-aware AI models, detect trends, schedule posts, and track analytics across Instagram, LinkedIn, and YouTube. Built with a modular analytics layer, it leverages OpenAI\'s API and handles cross-platform post management using platform-specific API connectors, deployed end-to-end on Vercel.',
-        tags: ['Python', 'React', 'Node.js', 'OpenAI API', 'REST APIs', 'PostgreSQL', 'Vercel'],
-        features: [
-            'Unified AI-powered dashboard for creator workflows',
-            'Context-aware caption generation and trend analysis using OpenAI API',
-            'Scheduling engine with platform-specific API connectors for cross-platform posting',
-            'Modular analytics layer to surface actionable engagement insights'
-        ],
-        challenges: [
-            'Interfacing with diverse, rate-limited, and complex APIs for Instagram, LinkedIn, and YouTube',
-            'Aggregating engagement analytics dynamically into a modular database layer'
-        ],
-        solutions: [
-            'Created a modular middleware wrapper handling token refreshes, rate limits, and request pooling',
-            'Designed an optimized PostgreSQL schema with timeseries support for performant analytics querying'
-        ],
-        github: 'https://github.com/ravencore06',
-        live: '#',
-        featured: true
-    },
-    {
         id: 'support-triage-agent',
         title: 'Support Triage Agent',
         shortDescription: 'Production-grade AI agent triaging customer support tickets via a 9-layer RAG pipeline - 100% processing success across 29 tickets, 85-90% estimated accuracy.',
@@ -66,6 +42,28 @@ export const projectsData = [
         solutions: [
             'Implemented WebAssembly (Wasm) compile-steps for core OpenCV functions to maximize mobile browser performance',
             'Configured a lightweight WebSocket-based bridge between local ROS2 nodes and the PWA frontend'
+        ],
+        github: 'https://github.com/ravencore06',
+        live: '#',
+        featured: true
+    },
+    {
+        id: 'parksight',
+        title: 'ParkSight',
+        shortDescription: 'AI-powered Parking Intelligence & Traffic Operations Command Center to transition parking enforcement from reactive patrolling to data-driven congestion mitigation.',
+        fullDescription: 'ParkSight is an AI-powered parking intelligence and traffic operations command center. It transitions municipal parking enforcement from reactive patrolling to data-driven congestion mitigation by identifying chronic parking bottlenecks. The system quantifies economic and environmental costs of traffic and parking inefficiency while optimizing patrol dispatches for municipal traffic authorities.',
+        tags: ['Python', 'AI/ML', 'Data Analytics', 'Pandas', 'NumPy', 'scikit-learn'],
+        features: [
+            'Transitions parking enforcement from reactive patrolling to data-driven congestion mitigation by identifying chronic parking bottlenecks',
+            'Quantifies economic and environmental costs while optimizing patrol dispatches for municipal traffic authorities'
+        ],
+        challenges: [
+            'Processing noisy spatial-temporal municipal parking datasets to detect real-time bottlenecks and patterns',
+            'Modeling and translating raw parking search times and idling metrics into concrete environmental and economic cost metrics'
+        ],
+        solutions: [
+            'Designed spatial-temporal analysis and clustering scripts using Pandas and NumPy to highlight parking bottlenecks',
+            'Developed simulation formulas to estimate fuel wastage, emissions, and associated economic overhead of parking search traffic'
         ],
         github: 'https://github.com/ravencore06',
         live: '#',

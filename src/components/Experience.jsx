@@ -8,36 +8,26 @@ function Experience() {
 
   const experiences = [
     {
+      title: 'Summer Intern',
+      company: 'Vicharanashala Lab for Education Design (VLED Lab), IIT Ropar',
+      period: 'Aug 2026 – Oct 2026',
+      location: 'Rupnagar, Punjab, India',
+      type: 'Internship',
+      description: [
+        "Selected for the Summer Internship 2026 at IIT Ropar's Vicharanashala Lab for Education Design (VLED Lab).",
+        "Contributing as an assigned contributor to real open-source software addressing India-centric problems through a live public repository.",
+        "Collaborating with mentors and peers on real-world software development and research-oriented problem solving."
+      ],
+    },
+    {
       title: 'ML Intern',
       company: 'Aegion Dynamic Solutions',
       period: 'May 2026 – Present',
       location: 'Remote',
       type: 'Internship',
       description: [
-        "Developing and evaluating ML models in Python — dimensionality reduction and custom neural network architectures; debugging performance bottlenecks and documenting findings systematically.",
+        "Developing and evaluating ML models in Python — dimensionality reduction and custom neural network architectures; working on Think on Graph and expert annotations; debugging performance bottlenecks and documenting findings systematically.",
         "End-to-end data science workflows: preprocessing, feature engineering, model evaluation with emphasis on clean, reproducible code on real-world datasets."
-      ],
-    },
-    {
-      title: 'Research Member',
-      company: 'National Student Research Institution (NSRI)',
-      period: 'June 2026 – Present',
-      location: 'Remote',
-      type: 'Research',
-      description: [
-        "Auditing algorithmic bias and fairness gaps in multi-modal clinical machine learning models using the MIMIC-IV and eICU databases.",
-        "Contributing to a peer-reviewed meta-analysis aimed at promoting algorithmic equity in health informatics."
-      ],
-    },
-    {
-      title: 'Virtual Internships',
-      company: 'Google EduSkills & ServiceNow',
-      period: 'Jan 2026 – Apr 2026',
-      location: 'Remote',
-      type: 'Virtual Internship',
-      description: [
-        "Google for Developers - EduSkills (AI/ML): Built Python projects with TensorFlow/Keras; applied feature engineering and k-fold cross-validation to evaluate model performance.",
-        "ServiceNow Platform & Admin: Covered enterprise IT fundamentals including Flows, ATF, and Reporting; evaluated AI-driven workflow logic against platform standards."
       ],
     },
     {
@@ -47,7 +37,8 @@ function Experience() {
       location: 'Remote',
       type: 'Open Source',
       description: [
-        "GirlScript Summer of Code (GSSoC) & Social Winter of Code (SWOC): Resolved issues across real-world repos via Git branching and PR workflows."
+        "Resolved critical issues across various real-world repositories, demonstrating proficiency in Git branching and collaborative PR workflows.",
+        "Engaged in rigorous code reviews and maintained high standards for documentation and code quality in public-facing open-source projects."
       ],
     }
   ];
